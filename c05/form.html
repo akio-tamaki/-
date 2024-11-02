@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/Form.css">
+<title>サンプル</title>
+</head>
+<body>
+  <form action="form" method="post">
+    <table>
+      <tr>
+        <td>お名前</td>
+        <td>
+          <input type="text" name="name" placeholder="お名前">
+        </td>
+      </tr>
+      <tr>
+        <td>性別</td>
+        <td>
+          <input type="radio" value="M" name="gen" checked/>男性
+          <input type="radio" value="W" name="gen"/>女性
+        </td>
+      </tr>
+      <tr>
+        <td>住所（都道府県）</td>
+        <td>
+          <select name="select">
+            <option value="FU">福岡県</option>
+            <option value="SA">佐賀県</option>
+            <option value="KU">熊本県</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>気になること</td>
+        <td>
+          <input type="checkbox" value="0" name="other" />旅行
+          <input type="checkbox" value="1" name="other" />映画
+          <input type="checkbox" value="2" name="other" />釣り
+        </td>
+      </tr>
+    </table>
+    <input type="submit" value="送信"/>
+  </form>
+</body>
+</html>
